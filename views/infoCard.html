@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEGO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="nav-container">
+        <section class="head-wrapper">
+            <div >
+                <a href="../index.html">
+                    <img src="../assets/left-arrow.svg" alt="left-arrow">
+                </a>
+            </div>
+            <div>
+                <span>Cargo Details</span>
+            </div>
+            <div>
+                <a href="">
+                    <img src="../assets/notification.svg" alt="notifications-icon">
+                </a>
+            </div>
+        </section>
+        
+    </header>
+    <main id="">
+        <section >
+            <div class="details-wrapper">
+                <div class="details-card">
+                    <span>Referencia A1180</span>
+                    <span id="norder-id"></span>
+                </div>
+                    <div class="details-content">
+                        <div class="details-content_toggle" id="radio-wrapper">
+                           <div>
+                            <input class="details-content_checkbox" type="radio"  name="status" value="pickup"
+                            checked>
+                           </div>
+                           <div class="divider-left"></div>
+                           <div>
+                            <input class="details-content_checkbox" type="radio"  name="status" value="dropoff">
+                           </div>
+
+                        </div>
+                        <div class="details-content_info">
+                            <div class="details-content_pickup">
+                                <span id="ptype-id">PICKUP</span>
+                                <span id="pct-id">Mexico</span>
+                                <span id="padd-id">Perif. Blvd. Manuel Ávila Camacho 3130, ...</span>
+                                <div class="details-status">
+                                    <div class="status-circle status-bg_blue"></div>
+                                    <span id="pstatus-id">In transit</span>
+                                </div>
+                            </div>
+                            <div class="details-content_pickup">
+                                <span id="dtype-id">DROPOFF</span>
+                                <span id="dct-id">Mexico</span>
+                                <span id="dadd-id">Perif. Blvd. Manuel Ávila Camacho 3130, ...</span>
+                                <div class="details-status">
+                                    <div class="status-circle status-bg_gray"></div>
+                                    <span id="dstatus-id">Pending</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                    </div>
+            </div>
+            <!-- nueva seccion -->
+            <section class="track-wrapper">
+                <div class="track-avatar">
+                    <img class="avatar-img" src="https://picsum.photos/200/300" alt="#">
+                </div>
+                <div class="track-content"> 
+                    <h2 id="hour-id">10:30 PM</h2>
+                    <ul class="track-list" id="order-li">
+                    </ul>
+                </div>
+                <div class="track-button ">
+                    <button  id="id-btn-list">Track Order</button>
+                </div>
+            </section>
+
+            <button type="button" class="collapsible" id="collapse-id">
+                Pickup Data
+                <span class="fa-chevron-up" id="collapse-icon">
+
+                </span>
+            </button>
+            <div class="content" id="collapse-content">
+                <span id="address-id">Perif. Blvd. Manuel Ávila Camacho 3130, ...</span>
+                <span id="month-id"> 10/10/2021</span>
+                <span id="time-id"> 10:30 PM</span>
+                <span id="contact-id"> 55 1234 5678</span>
+                <span id="email-id"> 55 1234 5678</span>
+            </div>
+
+
+        </section>
+        
+    </main>
+
+ <script type="module" src="../js/component/details.js"></script>  
+ <script type = "text/JavaScript" src = "https://MomentJS.com/downloads/moment.js"></script>
+
+</body>
+</html>

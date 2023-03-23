@@ -1,0 +1,293 @@
+{
+	"status": 200,
+	"result": [
+		{
+			"_id": "624b5714296f8d9a820d01b3",
+			"status": 1,
+			"order_number": "ID7PJQBJ",
+			"manager": "610aa90de6fcca003f74ad31",
+			"driver": "624b40f5296f8d9a820cfc46",
+			"version": "v1.0.0",
+			"type": "FTL",
+            "status_list": {
+                "pickup": [
+                    {
+                        "active": true,
+                        "status": "Orden creada"
+                    },
+                    {
+                        "active": true,
+                        "status": "Orden asignada"
+                    },
+                    {
+                        "active": true,
+                        "status": "Recolección iniciada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Recolección completada"
+                    }
+                ],
+                "dropoff": [
+                    {
+                        "active": true,
+                        "status": "Entrega iniciada"
+                    },
+                    {
+                        "active": true,
+                        "status": "Entrega completada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Orden completada"
+                    }
+                ]
+            },
+            "contact_info": {
+                "name": "Ignacio Canalla",
+                "telephone": "+52 52 56 64 96 56",
+                "email": "ignacio@bego.ai",
+                "country_code": "mx",
+                "rfc": "SAGF870828S13"
+            },
+			"destinations": [
+				{
+					"address": "Perif. Blvd. Manuel Ávila Camacho 3130, Valle Dorado, 54020 Tlalnepantla de Baz, Méx., Mexico",
+					"start_date": 1649193900000,
+					"end_date": 1649193900000,
+					"nickname": "Recolección",
+					"show_navigation": true
+				},
+				{
+					"address": "Mariano Matamoros, Sector Centro, 88000 Nuevo Laredo, Tamps., Mexico",
+					"start_date": 1649708460000,
+					"end_date": 1649708880000,
+					"nickname": "Entrega",
+					"show_navigation": false
+				}
+			],
+			"start_date": 1649193900000,
+			"end_date": 1649708880000,
+			"is_today": false,
+			"status_string": "Orden Asignada",
+			"status_class": "grey-dot-bg",
+			"driver_thumbnail": null
+		},
+		{
+			"_id": "624dbae1d809cadbcc63eeef",
+			"status": 3,
+			"order_number": "GMBL69I2",
+			"manager": "610aa90de6fcca003f74ad31",
+			"driver": "624b40f5296f8d9a820cfc46",
+			"version": "v1.0.0",
+			"type": "FTL",
+            "status_list": {
+                "pickup": [
+                    {
+                        "active": true,
+                        "status": "Orden creada"
+                    },
+                    {
+                        "active": true,
+                        "status": "Orden asignada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Recolección iniciada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Recolección completada"
+                    }
+                ],
+                "dropoff": [
+                    {
+                        "active": true,
+                        "status": "Entrega iniciada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Entrega completada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Orden completada"
+                    }
+                ]
+            },
+            "contact_info": {
+                "name": "Ignacio Canalla",
+                "telephone": "+52 52 56 64 96 56",
+                "email": "ignacio@bego.ai",
+                "country_code": "mx",
+                "rfc": "SAGF870828S13"
+            },
+			"destinations": [
+				{
+					"address": "Perif. Blvd. Manuel Ávila Camacho 3130, Valle Dorado, 54020 Tlalnepantla de Baz, Méx., Mexico",
+					"start_date": 1649262540000,
+					"end_date": 1649262540000,
+					"nickname": "Recolección",
+					"show_navigation": false
+				},
+				{
+					"address": "Mariano Matamoros, Sector Centro, 88000 Nuevo Laredo, Tamps., Mexico",
+					"start_date": 1649347080000,
+					"end_date": 1649347080000,
+					"nickname": "Entrega",
+					"show_navigation": true
+				}
+			],
+			"start_date": 1649262540000,
+			"end_date": 1649347080000,
+			"is_today": false,
+			"status_string": "Recolección completada",
+			"status_class": "blue-dot-bg",
+			"driver_thumbnail": null
+		},
+		{
+			"_id": "624ddaf4d809cadbcc63f776",
+			"status": 3,
+			"order_number": "RF41647Q",
+			"manager": "610aa90de6fcca003f74ad31",
+			"driver": "624b40f5296f8d9a820cfc46",
+			"version": "v1.0.0",
+			"type": "FTL",
+            "status_list": {
+                "pickup": [
+                    {
+                        "active": true,
+                        "status": "Orden creada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Orden asignada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Recolección iniciada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Recolección completada"
+                    }
+                ],
+                "dropoff": [
+                    {
+                        "active": true,
+                        "status": "Entrega iniciada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Entrega completada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Orden completada"
+                    }
+                ]
+            },
+            "contact_info": {
+                "name": "Ignacio Canalla",
+                "telephone": "+52 52 56 64 96 56",
+                "email": "ignacio@bego.ai",
+                "country_code": "mx",
+                "rfc": "SAGF870828S13"
+            },
+			"destinations": [
+				{
+					"address": "Perif. Blvd. Manuel Ávila Camacho 3130, Valle Dorado, 54020 Tlalnepantla de Baz, Méx., Mexico",
+					"start_date": 1649272500000,
+					"end_date": 1649272500000,
+					"nickname": "Recolección",
+					"show_navigation": false
+				},
+				{
+					"address": "Mariano Matamoros, Sector Centro, 88000 Nuevo Laredo, Tamps., Mexico",
+					"start_date": 1649357040000,
+					"end_date": 1649357040000,
+					"nickname": "Entrega",
+					"show_navigation": true
+				}
+			],
+			"start_date": 1649272500000,
+			"end_date": 1649357040000,
+			"is_today": false,
+			"status_string": "Recolección completada",
+			"status_class": "blue-dot-bg",
+			"driver_thumbnail": null
+		},
+		{
+			"_id": "62a28434dc64011b47939a97",
+			"status": 3,
+			"order_number": "7STSOCXU",
+			"manager": "610aa90de6fcca003f74ad31",
+			"driver": "624b40f5296f8d9a820cfc46",
+			"version": "v1.0.0",
+			"type": "FTL",
+            "status_list": {
+                "pickup": [
+                    {
+                        "active": true,
+                        "status": "Orden creada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Orden asignada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Recolección iniciada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Recolección completada"
+                    }
+                ],
+                "dropoff": [
+                    {
+                        "active": true,
+                        "status": "Entrega iniciada"
+                    },
+                    {
+                        "active": true,
+                        "status": "Entrega completada"
+                    },
+                    {
+                        "active": false,
+                        "status": "Orden completada"
+                    }
+                ]
+            },
+            "contact_info": {
+                "name": "Ignacio Canalla",
+                "telephone": "+52 52 56 64 96 56",
+                "email": "ignacio@bego.ai",
+                "country_code": "mx",
+                "rfc": "SAGF870828S13"
+            },
+			"destinations": [
+				{
+					"address": "Mariano Matamoros, Sector Centro, 88000 Nuevo Laredo, Tamps., Mexico",
+					"start_date": 1654904100000,
+					"end_date": 1654904100000,
+					"nickname": "Recolección",
+					"show_navigation": false
+				},
+				{
+					"address": "Perif. Blvd. Manuel Ávila Camacho 3130, Valle Dorado, 54020 Tlalnepantla de Baz, Méx., Mexico",
+					"start_date": 1655163300000,
+					"end_date": 1655163300000,
+					"nickname": "Entrega",
+					"show_navigation": true
+				}
+			],
+			"start_date": 1654904100000,
+			"end_date": 1655163300000,
+			"is_today": false,
+			"status_string": "Recolección completada",
+			"status_class": "blue-dot-bg",
+			"driver_thumbnail": null
+		}
+	]
+}
