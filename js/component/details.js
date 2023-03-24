@@ -30,7 +30,7 @@ filterStatus("pickup")
 
 radioWrapper.forEach(element => {
     element.addEventListener("change",(event) =>{
-        let select = event.target.value //event es el evento que se esta ejecutando, target es el elemento que esta disparando el evento, value es el valor del elemento que esta disparando el evento
+        let select = event.target.value
         filterStatus(select)        
 
     })
