@@ -433,7 +433,7 @@ main .card-wrapper .card-box .card-button button img {
 .details-wrapper .details-content .details-content_info .details-content_pickup .details-status {
   background-color: #363434;
   border-radius: 10px;
-  width: 50%;
+  width: 8rem;
   display: flex;
   align-items: center;
   padding: 0px 5px;
@@ -450,6 +450,11 @@ main .card-wrapper .card-box .card-button button img {
 }
 .details-wrapper .details-content .details-content_info .details-content_pickup .details-status .status-bg_gray {
   background-color: rgb(152, 152, 152);
+}
+@media screen and (min-width: 768px) {
+  .details-wrapper {
+    width: 30rem;
+  }
 }
 
 .track-wrapper {
@@ -507,6 +512,7 @@ main .card-wrapper .card-box .card-button button img {
   bottom: 0;
   left: 6%;
   margin-left: -3px;
+  transform: translateX(-50%);
 }
 .track-wrapper .track-content .track-list .track-item {
   display: flex;
@@ -557,6 +563,35 @@ main .card-wrapper .card-box .card-button button img {
   font-weight: 600;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .track-wrapper {
+    width: 30rem;
+  }
+  .track-wrapper .track-avatar {
+    width: 8rem;
+    height: 8rem;
+    border: 15px solid #242424;
+  }
+  .track-wrapper .track-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0rem;
+  }
+  .track-wrapper .track-content h2 {
+    font-size: 1.5rem;
+  }
+  .track-wrapper .track-content .track-list {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .track-wrapper .track-content .track-list::after {
+    margin-left: -4px;
+    height: 15rem;
+  }
+}
 
 .collapsible {
   display: flex;
@@ -594,6 +629,12 @@ main .card-wrapper .card-box .card-button button img {
   height: 1.5rem;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .collapsible {
+    width: 30rem;
+    font-size: 1.2rem;
+  }
+}
 
 .content {
   display: none;
@@ -608,4 +649,12 @@ main .card-wrapper .card-box .card-button button img {
   overflow: hidden;
   text-align: left;
   padding: 1rem;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background: linear-gradient(180deg, rgb(15, 18, 20) 23%, rgb(25, 26, 28) 47%);
+}
+@media screen and (min-width: 768px) {
+  .content {
+    width: 30rem;
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

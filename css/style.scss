@@ -469,7 +469,7 @@ main{
                 .details-status{
                     background-color: #363434;
                     border-radius: 10px;
-                    width: 50%;
+                    width: 8rem;
                     display: flex;
                     align-items: center;
                     padding: 0px 5px;
@@ -495,6 +495,12 @@ main{
 
         
     }
+
+    @media screen and (min-width: 768px){
+        width: 30rem;
+        
+    }
+    
 }
 
 
@@ -551,6 +557,7 @@ main{
                 bottom: 0;
                 left: 6%;
                 margin-left: -3px;
+                transform: translateX(-50%);
             }
            
        
@@ -561,9 +568,6 @@ main{
                 justify-content: start;
                 margin: 1rem 0rem;
                 z-index: 10 !important;
-
-
-
 
 
                 .check-list_item{
@@ -622,6 +626,36 @@ main{
         
     }
 
+    @media screen and (min-width: 768px){
+        width: 30rem;
+        .track-avatar{
+            width: 8rem;
+            height: 8rem;
+            border: 15px solid #242424;
+        }
+
+        .track-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 6rem 0rem;
+            h2{
+                font-size: 1.5rem;
+            }
+            .track-list{
+                font-size: 1.2rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                
+                &::after{
+                    margin-left: -4px;
+                    height: 15rem;
+                }
+            }
+        }
+    }
+
 
 }
 
@@ -661,6 +695,11 @@ main{
         height: 1.5rem;
         cursor: pointer;
     }
+
+    @media screen and (min-width: 768px){
+        width: 30rem;
+        font-size: 1.2rem;
+    }
 }
 
 .content{
@@ -676,5 +715,16 @@ main{
     overflow: hidden;
     text-align: left;
     padding: 1rem; 
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background: linear-gradient(180deg, rgba(15,18,20,1) 23%, rgba(25,26,28,1) 47%);
+
+    @media screen and (min-width: 768px){
+        width: 30rem;
+        font-size: 1.2rem;
+    }
+
+    
+
 }
 
