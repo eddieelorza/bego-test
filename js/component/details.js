@@ -4,7 +4,6 @@ import {trackOrderCard} from "../component/card.js";
 let urlParams = new URLSearchParams(window.location.search)
 let orderId = urlParams.get("orderId")
 let collapse = document.getElementById("collapse-id")
-
 let radioWrapper = document.querySelectorAll("#radio-wrapper input[type='radio']" )
 
 const filterStatus = async(elems) => {
@@ -19,8 +18,10 @@ const filterStatus = async(elems) => {
         ulWrapper.append(trackOrderCard(status , active))
         if(statusObj[0].active && statusObj[1].active && statusObj[2].active){
             btn.classList.add("active")
+            console.log("Track order")
         }else{
             btn.classList.remove("active")
+            console.log("No track order")
         }
     });
 }
@@ -48,7 +49,6 @@ const renderDetails = async() => {
     let deliveryAddress = document.getElementById("dadd-id")
     let deliveryStatus = document.getElementById("dstatus-id")
     let hour = document.getElementById("hour-id")
-    console.log(status_string)
     orderNumber.innerHTML = `Orden: #${order_number}`
     pickupType.innerHTML = destinations[1]['nickname']
     pickupCountry.innerHTML = 'México'
@@ -59,7 +59,6 @@ const renderDetails = async() => {
     deliveryAddress.innerHTML = `${destinations[0]['address'].slice(0, 20)}...`
     deliveryStatus.innerHTML = status_string. split(' ')[1]
     hour.innerHTML = moment().format('LT')
-
 
 }
 

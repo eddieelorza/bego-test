@@ -3,8 +3,6 @@ const cardComponent = (noOrder, type, status, pAddress, pTitle, pStartDate, pEnd
     cardWrapper.classList.add('card-wrapper')
     let orderNumber = document.createElement('div')
     orderNumber.classList.add('order-number')
-
-
     let textOrderNum = document.createElement('h3')
     let textOrder = document.createElement('span')
     textOrder.innerText = 'Orden'
@@ -26,10 +24,8 @@ const cardComponent = (noOrder, type, status, pAddress, pTitle, pStartDate, pEnd
     let statusText = document.createElement('span')
     statusText.innerText = status.split(' ')[1]
     typeText.innerText = type
-
     let statusCircle = document.createElement('span')
     statusCircle.classList.add( status === 'Orden Asignada' ? 'circle-gray' : 'circle-yellow')
-
     let deliveryResume = document.createElement('div')
     deliveryResume.classList.add('delivery-resume')
     let pickupItem = document.createElement('div')
@@ -53,7 +49,6 @@ const cardComponent = (noOrder, type, status, pAddress, pTitle, pStartDate, pEnd
     pTextDate.innerText = moment(pStartDate).format("DD/MM/YY");
     let pTextHour = document.createElement('span')
     pTextHour.innerText = moment(pEndDate).format("LT");
-    
     let dropoffItem = document.createElement('div')
     dropoffItem.classList.add('pickup-item')
     let dropoffInfo = document.createElement('div')
@@ -88,13 +83,11 @@ const cardComponent = (noOrder, type, status, pAddress, pTitle, pStartDate, pEnd
     btnTitle.innerText = 'Resumen'
     let btnIcon = document.createElement('img')
     btnIcon.setAttribute('src', '../../assets/eye-icon.svg')
-    
     //cardDivider
     cardDividerInfoFirst.append(deliveryIcon,typeText)
     cardDividerInfoSeco.append(statusCircle,statusText)
     cardDividerInfo.append(cardDividerInfoFirst, cardDividerInfoSeco)
     cardDivider.append(cardDividerInfo)
-
     //pickup
     pickupTextContent.append(pickupTitle,pickupCountry,pickupAddress)
     pickupInfo.append(pickupIcon,pickupTextContent)
@@ -110,10 +103,8 @@ const cardComponent = (noOrder, type, status, pAddress, pTitle, pStartDate, pEnd
     //btn
     btn.append(btnTitle,btnIcon)
     btnWrapper.append(btn)
-
     //
     cardBox.append(cardDivider,deliveryResume,btnWrapper)
-
     //
     orderNumber.append(textOrder, textOrderNum)
     //
@@ -127,8 +118,6 @@ const trackOrderCard = (status, active) =>{
     let listItem = document.createElement('li')
     listItem.classList.add('track-item')
     let divCheck = document.createElement('div')
-    // let divider = document.createElement('div')
-    // divider.classList.add("track-divider" )
     divCheck.classList.add( active ? 'check-icon' : 'check-list_item')
     let spanTitle = document.createElement('span')
     spanTitle.classList.add('check-list_title')
