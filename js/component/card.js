@@ -20,7 +20,7 @@ const cardComponent = (noOrder, type, status, pAddress, pTitle, pStartDate, pEnd
     let cardDividerInfoFirst = document.createElement('div')
     cardDividerInfoFirst.classList.add('d-flex')
     let deliveryIcon = document.createElement('img')
-    deliveryIcon.classList.add(...'me'.split(' '))
+    deliveryIcon.classList.add(...'me card-icon'.split(' '))
     deliveryIcon.setAttribute('src', '../../assets/delivery-icon.svg')
     let typeText = document.createElement('span')
     let statusText = document.createElement('span')
